@@ -2185,7 +2185,7 @@ const files = [
                             const normalized = normalizeFileName(file);
                             const encoded = encodeURIComponent(normalized);
 
-                            fetch(`https://cdn.jsdelivr.net/gh/applecrumblewithcustard/custard/UGS-Files/${encoded}?t=${Date.now()}`)
+                            fetch(`https://cdn.statically.io/gh/applecrumblewithcustard/custard/main/UGS-Files/${encoded}?t=${Date.now()}`)
                                 .then(response => response.text())
                                 .then(text => {
                                     const newWin = window.open("about:blank", "_blank");
